@@ -6,9 +6,10 @@ This Library scores an input text based on weighted keywords.
 It can be used to associate a selection of interests with a bunch of keywords and evaluate the relevance of a given text. 
 
 
-=== Example ===
 
-´´´php
+#### Example
+
+```php
 
 // We setup our keywords.
 // If "VW" is present in the text, add 10 points to the score.
@@ -25,4 +26,4 @@ $txt = 'Volkswagen (Abkürzung VW) ist die Stammmarke der Volkswagen AG.';
 $scorer = new TextScorer($criteria);
 $score = $scorer->score($txt);
 print $score; // => 15
-´´´
+```
