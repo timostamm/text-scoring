@@ -1,11 +1,10 @@
 <?php
 
-namespace Tests\TS\TextScoring;
-
+namespace Tests\TS\Text\Scoring;
 
 use PHPUnit\Framework\TestCase;
-use TS\TextScoring\TextScorer;
-use TS\TextScoring\TextScoreKeyword;
+use TS\Text\Scoring\TextScorer;
+use TS\Text\Scoring\TextScoreKeyword;
 
 
 class TextScorerTest extends TestCase

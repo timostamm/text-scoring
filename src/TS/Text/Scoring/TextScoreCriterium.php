@@ -1,6 +1,6 @@
 <?php
 
-namespace TS\TextScoring;
+namespace TS\Text\Scoring;
 
 
 interface TextScoreCriterium
