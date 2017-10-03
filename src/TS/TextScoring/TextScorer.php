@@ -3,9 +3,6 @@
 namespace TS\TextScoring;
 
 
-// TODO KeywordOrGroup -> scored nur eines der keywords (alternative: alias)
-// TODO KeywordAndGroup -> scored nur, wenn alle keywords treffen
-
 class TextScorer
 {
 

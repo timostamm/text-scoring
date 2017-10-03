@@ -28,8 +28,12 @@ class vamp::php7 {
       ensure => present,
       require => [Package['php', 'php7.1-cli'],Exec['update']]
     }
+	     
+    package { 'php7.1-mbstring':
+      ensure => present,
+      require => [Package['php', 'php7.1-cli'],Exec['update']]
+    }
 	    
-	  
 	  
 	  package { 'php7.1-gd':
 	    ensure => present,
