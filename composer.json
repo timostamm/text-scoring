@@ -1,0 +1,18 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"TS\\" : "src/TS"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"tests\\" : "tests/"
+		}
+	},
+	"name" : "ts/text-scoring",
+	"type" : "library",
+	"license" : "AGPL-3.0",
+	"require" : {
+		"php" : ">=7.1"
+	}
+}
