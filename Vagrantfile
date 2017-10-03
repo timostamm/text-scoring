@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+github_access_token = File.read(File.expand_path('~') + '/.config/composer/auth.json').match(/"([a-z0-9]{40})"/)[0].to_s
+
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.box_version = "=20160320.0.0"
@@ -15,11 +17,9 @@ Vagrant.configure("2") do |config|
     puppet.manifests_path = "vagrant-puppet/manifests"
     puppet.manifest_file = "site.pp"
     puppet.facter = {
-      
       "logroot" => "/var/log",
-      
+	  "github_access_token" => github_access_token, 
 	  "php" => "7", # 7 or 5 
-	 
     }
   end
 end

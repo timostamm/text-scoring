@@ -26,7 +26,7 @@ class vamp::composer{
 	    require=> Exec['composer php'],
     }
     exec{ 'composer config':
-	    command => '/usr/local/bin/composer config -g github-oauth.github.com 213662e560db6de5b268f14d319ef990b836ea9c',
+	    command => "/usr/local/bin/composer config -g github-oauth.github.com $::github_access_token", 
 	    user => "vagrant",
 	    environment => ["HOME=/home/vagrant"],
 	    require=> Exec['composer move'],
